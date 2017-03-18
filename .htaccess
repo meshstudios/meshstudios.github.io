@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^meshstudios.github.io[nc]
+RewriteRule ^(.*)$ http://www.meshstudios.github.io/$1 [r=301,nc]
+
+//301 Redirect Old File
+Redirect 301 www.meshstudios.github.io meshstudios.github.io
